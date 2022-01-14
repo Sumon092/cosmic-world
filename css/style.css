@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Montserrat:wght@400;600;700&family=Poppins:wght@500&family=Raleway:wght@500;600;700&family=Roboto:wght@700&display=swap');
+/*--------------------------
+ CSS for all
+ --------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat', sans-serif;;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.highlight{
+    color:#FF008E;
+}
+.primary-button{
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg,#c21273,#FF008e);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #720742;
+    position: relative;
+    top: 0;
+    text-transform: uppercase;
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #720742;
+
+}
+.section-title{
+    text-align: center;/* jeheyu h2 k niche inline block kora hoyeche tai full div k centr kora holo tahole center hobe na*/
+}
+.section-title h2{
+font-size: 40px;
+text-transform: uppercase;
+margin: 30px 0;
+border-bottom: 2px solid #FF008e;
+display: inline-block;/* h2 block element howate border ta full screen nicchilo tai eke inline block kora holo jate tar joto tuku dorkar toto tuku e nei*/
+}
+/*---------------------------
+ Navbar section is here  
+ ----------------------------*/
+ header{
+     height:100vh;/*vh means view-height eta device wise height dei */
+     background-image: url('../images/cloud.png');
+     background-repeat: no-repeat;
+     background-size: cover;/* image jodi width er cheye chuto hoi tahole onek somoi jaiga cher dei ,full cover hoina,eta dile jaiga charbe na ..fill hoye jabe.*/
+     background-color: rgba(0,0,0,.6);/* overlat deyar jonno deya holo halka ektu dark hobe */
+     background-blend-mode: overlay;/* background image ta jate ektu ghula hoye sob kichu bujha jai se jonno eta deya holo*/
+ }
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;/* height chara align item kaz kore na*/
+    align-items: center;
+
+}
+  /* li{
+    display: inline-block;
+}  li  inline block korle joto tuku jaiga lage toto tuku e nibe eta diyeo kora jeto*/
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    margin: 10px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 600;
+    padding: 15px 10px;/*hover jate ekebare text er kache niye jete na hoi sei jonno deya holo*/
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 80px);/*vh er por ekta space diye minus and tarpor arekta space diye pixel likhte hobe space na thakle kaz korbena.*/
+}
+.left-banner{
+    display: flex;
+    flex-direction: column;
+    /* flex direction change  korle justify content upor niche and align item dane bame kaz kore orthat ulta kaz kore */
+    justify-content: center;
+    align-items: flex-start;/*line gulok(button) thik moto ante eta deya holo */
+}
+.left-banner h1{
+    font-size: 45px;
+}
+.left-banner p{
+    margin: 20px 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.3;
+}
+.right-banner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.right-banner img{
+    width: 100%;
+}
+/* ------------------------------------------
+FEATURE PART CSS
+---------------------------------------------- */
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;/*eta korar por o change lokkho kora jai na,tai niche margin auto kore deya holo*/
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+    margin: 0 auto;
+}
+.card .card-icon{
+    background-color: #FF008E;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.card h3{
+    font-size: 25px;
+    color: #FF008E;
+}
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card a{
+    color: #FF008E;
+    text-decoration: none;
+}
